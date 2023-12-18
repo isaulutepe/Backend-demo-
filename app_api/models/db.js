@@ -8,7 +8,7 @@ mongoose.connection.on("error", function(){
     console.log("Bağlantıda hata var");
 });
 mongoose.connection.on("disconnected", function(){
-    console.log("Her eyes left school my mind is bad");
+    console.log("Bağlantı hatalı");
 });
 process.on("SIGINT" ,function(){
     mongoose.connection.close();
